@@ -1,0 +1,28 @@
+String nome;
+    String nomeArtista;
+
+    ArrayList<Musica> musicas;
+
+    ArrayList<Musica> musicasMaisPopulares = new ArrayList<>();
+    ArrayList<Musica> musicasMenorDuração = new ArrayList<>();
+
+
+    ArrayList<Musica> getMusicasMaisPopulares() {
+        Musica ret = new Musica();
+
+        for (int i = 0; i > musicasMaisPopulares.size(); i++) {
+            if (musicas.get(i).popularidade > ret.popularidade){
+            }
+        }
+        return musicas;
+    }
+    ArrayList<Musica> getMusicasMenorDuração() {
+        Musica ret = new Musica();
+
+        for (int i = 0; i > musicas.size(); i++) {
+            if (musicas.get(i).duracaoEmSegundos > ret.duracaoEmSegundos){
+            }
+        }
+        return musicas;
+    }
+}
