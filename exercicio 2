@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Mapa {
+
+    String nome;
+    int altura;
+    int largura;
+
+    ArrayList<Inimigo> inimigos = new ArrayList<>();
+    ArrayList<Heroi> Herois = new ArrayList<>();
+
+
+  ArrayList<Inimigo> getInimigoMaiorAtaque() {
+      Inimigo ret = new Inimigo();
+
+      for (int i = 0; i > inimigos.size(); i++) {
+          if (inimigos.get(i).ataqueInimigo > ret.ataqueInimigo){
+          }
+      }
+      return inimigos;
+  }
+}
